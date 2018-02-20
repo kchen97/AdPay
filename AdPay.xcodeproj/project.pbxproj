@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EE6729B203C0CCE00466134 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6729A203C0CCE00466134 /* PaymentTableViewCell.swift */; };
 		8EF358FB203C0962001CAB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF358FA203C0962001CAB68 /* AppDelegate.swift */; };
-		8EF358FD203C0962001CAB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF358FC203C0962001CAB68 /* ViewController.swift */; };
+		8EF358FD203C0962001CAB68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF358FC203C0962001CAB68 /* MainViewController.swift */; };
 		8EF35900203C0962001CAB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF358FE203C0962001CAB68 /* Main.storyboard */; };
 		8EF35902203C0962001CAB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF35901203C0962001CAB68 /* Assets.xcassets */; };
 		8EF35905203C0962001CAB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF35903203C0962001CAB68 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EE6729A203C0CCE00466134 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
 		8EF358F7203C0962001CAB68 /* AdPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF358FA203C0962001CAB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EF358FC203C0962001CAB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EF358FC203C0962001CAB68 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8EF358FF203C0962001CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EF35901203C0962001CAB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF35904203C0962001CAB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EE67297203C09DD00466134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EE67298203C09E800466134 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF358FE203C0962001CAB68 /* Main.storyboard */,
+				8EF35903203C0962001CAB68 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EE67299203C09EB00466134 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EF358FA203C0962001CAB68 /* AppDelegate.swift */,
+				8EF358FC203C0962001CAB68 /* MainViewController.swift */,
+				8EE6729A203C0CCE00466134 /* PaymentTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8EF358EE203C0962001CAB68 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +82,10 @@
 		8EF358F9203C0962001CAB68 /* AdPay */ = {
 			isa = PBXGroup;
 			children = (
-				8EF358FA203C0962001CAB68 /* AppDelegate.swift */,
-				8EF358FC203C0962001CAB68 /* ViewController.swift */,
-				8EF358FE203C0962001CAB68 /* Main.storyboard */,
+				8EE67299203C09EB00466134 /* Controller */,
+				8EE67298203C09E800466134 /* View */,
+				8EE67297203C09DD00466134 /* Model */,
 				8EF35901203C0962001CAB68 /* Assets.xcassets */,
-				8EF35903203C0962001CAB68 /* LaunchScreen.storyboard */,
 				8EF35906203C0962001CAB68 /* Info.plist */,
 			);
 			path = AdPay;
@@ -136,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF358FD203C0962001CAB68 /* ViewController.swift in Sources */,
+				8EF358FD203C0962001CAB68 /* MainViewController.swift in Sources */,
 				8EF358FB203C0962001CAB68 /* AppDelegate.swift in Sources */,
+				8EE6729B203C0CCE00466134 /* PaymentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
