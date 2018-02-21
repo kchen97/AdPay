@@ -21,6 +21,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var menuLeading: NSLayoutConstraint!
     var menuVisible = false
     
+    let homeButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor.red
+        button.layer.shadowOpacity = 1
+        button.layer.cornerRadius = 12
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.masksToBounds = true
+        
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,16 +40,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func setupUI() {
-        menuView.layer.shadowOpacity = 1
-        menuView.backgroundColor = UIColor.darkGray
-        menuView.layer.cornerRadius = 12
-        historyTableView.delegate = self
-        historyTableView.dataSource = self
-        historyTableView.rowHeight = 65
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
     }
     
     //MARK: Delegate and Datasource
@@ -82,6 +83,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }, completion: { (cool) in
             self.menuVisible = !self.menuVisible
         })
+    }
+    
+    func setupUI() {
+        menuView.layer.shadowOpacity = 1
+        menuView.backgroundColor = UIColor.darkGray
+        menuView.layer.cornerRadius = 12
+        historyTableView.delegate = self
+        historyTableView.dataSource = self
+        historyTableView.rowHeight = 65
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
+        menuView.addSubview(homeButton)
+        
+        homeButton.leadingAnchor.constraint(equalTo: menuView.leadingAnchor, constant: 6).isActive = true
+        homeButton.trailingAnchor.constraint(equalTo: menuView.trailingAnchor, constant: -6).isActive = true
+        homeButton.topAnchor.constraint(equalTo: menuView.topAnchor, constant: 50).isActive = true
+        homeButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
 }
 
