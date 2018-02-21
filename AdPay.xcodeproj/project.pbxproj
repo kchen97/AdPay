@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E5813A7203D07C200496CF1 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5813A6203D07C200496CF1 /* Payment.swift */; };
 		8EE6729B203C0CCE00466134 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6729A203C0CCE00466134 /* PaymentTableViewCell.swift */; };
 		8EF358FB203C0962001CAB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF358FA203C0962001CAB68 /* AppDelegate.swift */; };
 		8EF358FD203C0962001CAB68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF358FC203C0962001CAB68 /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E5813A6203D07C200496CF1 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		8EE6729A203C0CCE00466134 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
 		8EF358F7203C0962001CAB68 /* AdPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF358FA203C0962001CAB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		8EE67297203C09DD00466134 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E5813A6203D07C200496CF1 /* Payment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				8EF358FD203C0962001CAB68 /* MainViewController.swift in Sources */,
 				8EF358FB203C0962001CAB68 /* AppDelegate.swift in Sources */,
+				8E5813A7203D07C200496CF1 /* Payment.swift in Sources */,
 				8EE6729B203C0CCE00466134 /* PaymentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
