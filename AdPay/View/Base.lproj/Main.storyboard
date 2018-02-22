@@ -71,23 +71,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-HO-owB">
-                                <rect key="frame" x="-160" y="76" width="160" height="579"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="jPr-sj-7C6"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kIZ-pp-tdN" firstAttribute="trailing" secondItem="mMf-tV-P1h" secondAttribute="trailing" id="GYA-vA-EjX"/>
-                            <constraint firstItem="BkA-HO-owB" firstAttribute="top" secondItem="mMf-tV-P1h" secondAttribute="top" constant="12" id="K92-Og-nKH"/>
                             <constraint firstItem="kIZ-pp-tdN" firstAttribute="leading" secondItem="mMf-tV-P1h" secondAttribute="leading" id="RXQ-cI-qNU"/>
-                            <constraint firstItem="mMf-tV-P1h" firstAttribute="bottom" secondItem="BkA-HO-owB" secondAttribute="bottom" constant="12" id="X9Q-aB-r7Q"/>
                             <constraint firstItem="kIZ-pp-tdN" firstAttribute="top" secondItem="mMf-tV-P1h" secondAttribute="top" id="dej-WQ-fw9"/>
                             <constraint firstItem="kIZ-pp-tdN" firstAttribute="bottom" secondItem="mMf-tV-P1h" secondAttribute="bottom" id="etp-VS-Vxo"/>
-                            <constraint firstItem="BkA-HO-owB" firstAttribute="leading" secondItem="mMf-tV-P1h" secondAttribute="leading" constant="-160" id="xYg-67-UFM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mMf-tV-P1h"/>
                     </view>
@@ -100,8 +90,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="historyTableView" destination="kIZ-pp-tdN" id="1jf-cR-QRY"/>
-                        <outlet property="menuLeading" destination="xYg-67-UFM" id="BOS-mg-k8V"/>
-                        <outlet property="menuView" destination="BkA-HO-owB" id="61r-Cy-RJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr6-y7-Mct" userLabel="First Responder" sceneMemberID="firstResponder"/>
